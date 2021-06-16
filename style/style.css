@@ -50,6 +50,14 @@ header nav a:hover {
     color: #fff;
   
 }
+/*Videos*/
+.harry, .spider, .pokemon , .starwars , .hobitts , .arrow , .dragonball , 
+.sobrenatural , .smalville , .vingadores , .ironman {
+    display: none;
+}
+#idiframe{
+    text-align: center;
+}
 
 /*Filme Principal*/
 
@@ -61,9 +69,10 @@ header nav a:hover {
     background-position:center;
 
 }
-
-.firstmovie {
+#firstmovie{
     display: flex;
+}
+.firstmovie  {
     flex-direction: column;
     justify-content: center;
     align-items:flex-start;
@@ -126,3 +135,17 @@ header nav a:hover {
     cursor: pointer;
 }
 
+/*responsividade do player */
+
+@media (min-width:320px) and (max-width:700px) {
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (min-width:701px) and (max-width:1200px){
+    iframe{
+        width: 640px;
+        height: 360px;
+    }
+}

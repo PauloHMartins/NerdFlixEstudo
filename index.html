@@ -15,9 +15,9 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NerdFlix </h2>
+            <h2 class="logo" onclick = "home()">NerdFlix </h2>
             <nav>
-                <a href="#">Início</a>
+                <a href="#" onclick = "home()">Início</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
@@ -25,46 +25,106 @@
         </div>
     </header>
     <main>
-        <div class="firstmovie">
-            <div class="container">
-                <div class="container--title">
-                    <h3>HOMEM DE FERRO</h3>
-                </div>
-                <div class="container--description">
-                    <p>
-                        Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor. Ao ser sequestrado ele é obrigado por terroristas a construir uma arma devastadora mas, ao invés disto, constrói uma armadura de alta tecnologia que permite que fuja de seu cativeiro.
-                    </p>
-                </div>
-                <div class="classbutton">
-                    <div class="button watch" role="button"> 
-                        <i class="fas fa-play"></i>
-                        Assistir Agora</div>
-                    <div class="button information" role="button">
-                        <i class="fas fa-info-circle"></i>
-                        Mais Informações</div>
-                </div>
+        <div class="iframes">
+            <div class="harry" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/kmXjPbN-rYU"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen></iframe>
             </div>
+            <div class="spider" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/6nzNdpJ3qMo" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="pokemon" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/yQCREgz4tQY"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="starwars" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/8Qn_spdM5Zg"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="hobitts" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/VKkFW5TTB6g" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="dragonball" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/pRopTczVGqU" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="arrow" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/2yrviapP5uY"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sobrenatural" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/DX3PwNRAHck" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="smalville" id="idiframe">
+                <iframe width="1130" height="500" src="https://www.youtube.com/embed/yBHfuph4WWY" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="vingadores" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/t_ULBP6V9bg" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="ironman" id="idiframe">
+                <iframe width="1280" height="500" src="https://www.youtube.com/embed/8ugaeA-nMTc" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="firstmovie" id="firstmovie">
+                <div class="container">
+                    <div class="container--title">
+                        <h3>HOMEM DE FERRO</h3>
+                    </div>
+                    <div class="container--description">
+                        <p>
+                            Tony Stark (Robert Downey Jr.) é um industrial bilionário, que também é um brilhante inventor. Ao ser sequestrado ele é obrigado por terroristas a construir uma arma devastadora mas, ao invés disto, constrói uma armadura de alta tecnologia que permite que fuja de seu cativeiro.
+                        </p>
+                    </div>
+                    <div class="classbutton">
+                        <div class="button watch" role="button" onclick = "iroman()"> 
+                            <i class="fas fa-play"></i>
+                            Assistir Agora
+                        </div>
+                        <div class="button information" role="button" >
+                            <i class="fas fa-info-circle"></i>
+                            Mais Informações
+                        </div>
+                    </div>
+                </div>
         </div>
 
     </main>
 
     <div class="carrossel-filmes">
             <div class="owl-carousel owl-theme">
-            <div class="item"><img class="box-filme" src="img/mini1.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini2.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini3.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini4.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini5.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini6.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini7.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini8.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini9.jpg" alt="imagem"></div>
-            <div class="item"><img class="box-filme" src="img/mini10.jpg" alt="imagem"></div>
+            <div class="item"><img class="box-filme one" src="img/mini1.jpg" alt="imagem" onclick = "harry()" ></div>
+            <div class="item"><img class="box-filme two" src="img/mini2.jpg" alt="imagem" onclick = "spider()" ></div>
+            <div class="item"><img class="box-filme three" src="img/mini3.jpg" alt="imagem" onclick = "pokemon()" ></div>
+            <div class="item"><img class="box-filme four" src="img/mini4.jpg" alt="imagem" onclick = "starwars()" ></div>
+            <div class="item"><img class="box-filme five " src="img/mini5.jpg" alt="imagem"onclick = "hobitts()" ></div>
+            <div class="item"><img class="box-filme six" src="img/mini6.jpg" alt="imagem" onclick = "dragonball()" ></div>
+            <div class="item"><img class="box-filme seven" src="img/mini7.jpg" alt="imagem" onclick = "arrow()" ></div>
+            <div class="item"><img class="box-filme eight" src="img/mini8.jpg" alt="imagem"onclick = "sobrenatural()" ></div>
+            <div class="item"><img class="box-filme nine" src="img/mini9.jpg" alt="imagem" onclick = "smalville()" ></div>
+            <div class="item"><img class="box-filme ten " src="img/mini10.jpg" alt="imagem" onclick = "vingadores()" ></div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/9b6c4f8890.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

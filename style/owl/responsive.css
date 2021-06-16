@@ -17,12 +17,13 @@
     .firstmovie{
         background-size: cover;
     }
+ 
 
 }
 @media (min-width:1000px) {
     .container--description{
         width: 50%;
     }
-
+ 
 
 }
